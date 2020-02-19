@@ -7,8 +7,8 @@ class header extends Component {
     
     onSubmitHandler =(e)=>{
         e.preventDefault();
-        console.log('clicked')
-        console.log(e.target[0].value)
+        // console.log('clicked')
+        // console.log(e.target[0].value)
         const searchTag = e.target[0].value;
         this.props.SearchImages(searchTag);
         e.target[0].value = ''
@@ -19,7 +19,7 @@ class header extends Component {
         return (
             <div className='headerDiv'>
                 {/* <div></div> */}
-                <h1>header</h1>
+                <h1 style={{color:'blue'}}>Gallery</h1>
                 <form onSubmit={this.onSubmitHandler}>
                     <input></input>
                     <button type='submit'>search</button>

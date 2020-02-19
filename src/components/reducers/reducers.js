@@ -11,7 +11,7 @@ const reducers = (state = initialState, action) => {
 
     switch (action.type) {
         case GET_IMAGE_SUCCESS:
-            console.log(action.payload)
+            // console.log(action.payload)
             const data = action.payload;
             return {
                 ...state,
@@ -67,7 +67,7 @@ const reducers = (state = initialState, action) => {
                 ...state,
                 favorite:state.favorite.filter(data =>{
                     if (data.id !== removeid) {
-                        console.log(data)
+                        // console.log(data)
                         return {
                             data
                         }

@@ -13,7 +13,7 @@ class mainComponent extends Component {
 
     onClickHandler = (e) => {
         if(e.target.parentElement.parentElement.firstChild.getAttribute('status') === 'true' || e.target.parentElement.firstChild.getAttribute('status') === 'true'){
-            console.log('hello')
+            // console.log('hello')
             const ItemID = e.target.parentElement.firstChild.id === ''?e.target.parentElement.parentElement.firstChild.id:e.target.parentElement.firstChild.id
             const data = {
                 favorite:'false',
@@ -25,7 +25,7 @@ class mainComponent extends Component {
             const addItemID = e.target.parentElement.firstChild.id === ''?e.target.parentElement.parentElement.firstChild.id:e.target.parentElement.firstChild.id;
             
             const addThumb = e.target.parentElement.firstChild.src === undefined ? e.target.parentElement.parentElement.firstChild.src:e.target.parentElement.firstChild.src
-            console.log(addThumb)
+            // console.log(addThumb)
             const data = {
                 favorite:'true',
                 id: addItemID,
@@ -55,6 +55,7 @@ class mainComponent extends Component {
 
                     if(data.favorite === 'true'){
                         return(
+                            
                             <div className='thumbnail' key={data.id}>
                                 <img src={data.urls.thumb}  id={data.id} status={data.favorite}>
                                 
@@ -84,6 +85,7 @@ class mainComponent extends Component {
     render() {
         return (
             <div className='mainComponentDiv'>
+
                 {this.mapImages()}
 
             </div>

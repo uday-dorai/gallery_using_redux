@@ -14,8 +14,8 @@ export const SearchImages=(data) =>{
 }
 
 export const favoriteImage = (data) =>{
-    console.log('data')
-    console.log(data);
+    // console.log('data')
+    // console.log(data);
     return{
         type:'ADD_TO_FAVORITE',
         data
@@ -23,7 +23,7 @@ export const favoriteImage = (data) =>{
 }
 
 export const removeFromFavorite = (data)=>{
-    console.log('remove_from_favorite',data);
+    // console.log('remove_from_favorite',data);
     return{
         type:'REMOVE_FROM_FAVORITE',
         data

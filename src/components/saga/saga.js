@@ -58,8 +58,8 @@ function* addToFavorite(){
 }
 
 function* addTofavoriteWorker(data){
-    console.log('******_____*******----')
-    console.log(data);
+    // console.log('******_____*******----')
+    // console.log(data);
     const payload = data.data;
     yield put ({type:'ADD_FAVORITE_SUCCESS',payload})
 }
@@ -72,7 +72,7 @@ function* removeFromfavorite(){
 }
 
 function* removeFromFavoriteWorker(data){
-    console.log(data)
+    // console.log(data)
     const payload = data.data;
     yield put ({type:'REMOVE_FROM_FAVORITE_SUCCESS',payload})
 
@@ -87,7 +87,7 @@ function* toggleBetweenImageCollectionAndFavorite(){
 }
 
 function* toggleBetweenImageCollectionAndFavorite_worker(data){
-    console.log(data.data)
+    // console.log(data.data)
     const payload = data.data
     yield put ({type:'TOGGLE_SUCCESS',payload})
 
